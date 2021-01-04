@@ -1,0 +1,37 @@
+body {
+    background-color: #233D4D;
+}
+
+#lightText {
+    color: rgb(185, 185, 185);
+}
+
+#homeNav {
+    border-bottom: 2px solid #fe7f2d;
+}
+
+#contactMeNav {
+    color: #fe7f2d;
+    border-color: #fe7f2d;
+}
+
+#contactMeNav:hover {
+    background-color: #fe7f2d;
+    color: white;
+}
+
+#section1 {
+    margin: 40px 0px;
+}
+
+#img1 {
+    border-radius: 10%;
+}
+
+#mainText {
+    margin: auto;
+}
+
+#mainH1 {
+    color: white;
+}
