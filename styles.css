@@ -20,12 +20,9 @@ body {
     color: white;
 }
 
-#section1 {
-    margin: 40px 0px;
-}
-
 #img1 {
     border-radius: 10%;
+    max-width: 80%;
 }
 
 #mainText {
@@ -33,5 +30,22 @@ body {
 }
 
 #mainH1 {
-    color: white;
+    color: rgb(49, 49, 49);
+}
+
+#mainP {
+    color: rgb(61, 61, 61);
+}
+
+#carouselSlide {
+    padding: 0 4em;
+}
+
+#section1 {
+    padding: 2vw 0;
+    background-color: rgb(235, 235, 235);
+}
+
+#section2 {
+    padding: 2em 0;
 }
