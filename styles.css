@@ -2,6 +2,10 @@ body {
     background-color: #233D4D;
 }
 
+#mainNav {
+    background-color: #233D4D;
+}
+
 #homeNav {
     border-bottom: 2px solid #fe7f2d;
 }
@@ -40,10 +44,17 @@ body {
 
 #section1IMG {
     padding: 2em 0;
+    padding-right: 2em;
+    border-radius: 20%;
+}
+
+#mainIMG {
+    border-radius: 2.5%;
 }
 
 #section2 {
     padding: 2em 0;
+    border-bottom: 2px solid #fe7f2d;
 }
 
 #heading2 {
@@ -60,6 +71,15 @@ body {
 #section3 {
     background-color: white;
     text-align: center;
-    border-bottom: 2px solid #fe7f2d;
     margin-bottom: 2em;
+}
+
+#heading3 {
+    margin-bottom: 2em;
+    padding-top: 2em;
+    border-bottom: 2px solid #fe7f2d;
+}
+
+#footer {
+    color: white;
 }

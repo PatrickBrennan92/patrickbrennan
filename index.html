@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Patrick Brennan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,27 +35,28 @@
         </div>
     </nav>
 
+    <!-- SECTION 1 -->
     <section id="section1" class="container-fluid">
         <div class="row">
             <div id="mainText" class="col-lg-5 text-center">
-                <h1 id="mainH1" class="display-2"></h1>
+                <h1 id="mainH1" class="display-1"></h1>
                 <p id="mainP" class="lead">
 
                 </p>
             </div>
             <div id="section1IMG" class="col-lg-7">
-                <img class="img-fluid" src="Images/laptop.webp" alt="image of a laptop with code on the screen">
+                <img id="mainIMG" class="img-fluid" src="Images/laptop.webp" alt="image of a laptop with code on the screen">
             </div>
         </div>
     </section>
 
-    <section id="section2" class="container">
-        <div id="heading2">
+    <section id="section2" class="container-fluid">
+        <div id="heading2" class="container">
             <h2 class="display-4">Skills</h2>
         </div>
         <div class="row">
             <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
-                <div class="card" style="width: 90%;">
+                <div id="innerCard" class="card" style="width: 80%;">
                     <img id="cardIMG" src="Images/htmlcssjs.jpg" class="card-img-top" alt="HTML, CSS and JavaScript">
                     <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
@@ -73,7 +74,7 @@
                 </div>
             </div>
             <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
-                <div class="card" style="width: 90%;">
+                <div id="innerCard" class="card" style="width: 80%;">
                     <img id="cardIMG" src="Images/python-logo.png" class="card-img-top" alt="Python Logo">
                     <div class="card-body">
                         <h5 class="card-title">Python Development</h5>
@@ -91,7 +92,7 @@
                 </div>
             </div>
             <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
-                <div class="card" style="width: 90%;">
+                <div id="innerCard" class="card" style="width: 80%;">
                     <img id="cardIMG" src="Images/GitHub.png" class="card-img-top" alt="GitHub Logo">
                     <div class="card-body">
                         <h5 class="card-title">Version Control</h5>
@@ -112,10 +113,128 @@
     </section>
 
     <section id="section3" class="container-fluid">
-        <div id="heading3">
+        <div id="heading3" class="container">
             <h2 class="display-4">Projects</h2>
         </div>
+        <div class="container accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Python Aim Trainer
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This was my first major project while learning Python.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                        though the transition does limit overflow.
+                    </div>
+                    <div>
+                        <img src="Images/Projects/Aim_Trainer.png" alt="image of aim trainer game.">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                        as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
+                        the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
+                        as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
+                        the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase display-6">Thank you for your time.</h5>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-light">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-light">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-light">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-light" href="">Patrick Brennan</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
