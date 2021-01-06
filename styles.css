@@ -2,10 +2,6 @@ body {
     background-color: #233D4D;
 }
 
-#lightText {
-    color: rgb(185, 185, 185);
-}
-
 #homeNav {
     border-bottom: 2px solid #fe7f2d;
 }
@@ -37,15 +33,33 @@ body {
     color: rgb(61, 61, 61);
 }
 
-#carouselSlide {
-    padding: 0 4em;
-}
-
 #section1 {
     padding: 2vw 0;
-    background-color: rgb(235, 235, 235);
+    background-color: white;
+}
+
+#section1IMG {
+    padding: 2em 0;
 }
 
 #section2 {
     padding: 2em 0;
+}
+
+#heading2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #fe7f2d;
+}
+
+#cards {
+    margin-bottom: 2em;
+}
+
+#section3 {
+    background-color: white;
+    text-align: center;
+    border-bottom: 2px solid #fe7f2d;
+    margin-bottom: 2em;
 }
