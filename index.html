@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Patrick Brennan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,35 +37,26 @@
 
     <section id="section1" class="container-fluid">
         <div class="row">
-            <div id="mainText" class="col-lg-6 text-center">
-                <h1 id="mainH1" class="display-3">Hello, I'm Patrick.</h1>
+            <div id="mainText" class="col-lg-5 text-center">
+                <h1 id="mainH1" class="display-2"></h1>
                 <p id="mainP" class="lead">
-                    I'm a self taught web developer from Ireland.
+
                 </p>
             </div>
-            <div class="col-lg-6">
-                <div id="carouselSlide" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="Images/placeholder.jpg" class="d-block w-100" alt="placeholder">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="Images/placeholder.jpg" class="d-block w-100" alt="placeholder">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="Images/placeholder.jpg" class="d-block w-100" alt="placeholder">
-                        </div>
-                    </div>
-                </div>
+            <div id="section1IMG" class="col-lg-7">
+                <img class="img-fluid" src="Images/laptop.webp" alt="image of a laptop with code on the screen">
             </div>
         </div>
     </section>
 
     <section id="section2" class="container">
+        <div id="heading2">
+            <h2 class="display-4">Skills</h2>
+        </div>
         <div class="row">
-            <div class="col-lg-4 d-flex justify-content-center text-center">
+            <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
                 <div class="card" style="width: 90%;">
-                    <img src="Images/htmlcssjs.jpg" class="card-img-top" alt="...">
+                    <img id="cardIMG" src="Images/htmlcssjs.jpg" class="card-img-top" alt="HTML, CSS and JavaScript">
                     <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,11 +72,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center text-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+            <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
+                <div class="card" style="width: 90%;">
+                    <img id="cardIMG" src="Images/python-logo.png" class="card-img-top" alt="Python Logo">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Python Development</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -99,11 +90,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center text-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+            <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
+                <div class="card" style="width: 90%;">
+                    <img id="cardIMG" src="Images/GitHub.png" class="card-img-top" alt="GitHub Logo">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Version Control</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -120,10 +111,15 @@
         </div>
     </section>
 
+    <section id="section3" class="container-fluid">
+        <div id="heading3">
+            <h2 class="display-4">Projects</h2>
+        </div>
+    </section>
 
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
