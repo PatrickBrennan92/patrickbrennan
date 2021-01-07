@@ -2,12 +2,12 @@ body {
     background-color: #233D4D;
 }
 
-#mainNav {
-    background-color: #233D4D;
+.navHighlight {
+    border-bottom: 2px solid #fe7f2d;
 }
 
-#homeNav {
-    border-bottom: 2px solid #fe7f2d;
+#mainNav {
+    background-color: #233D4D;
 }
 
 #contactMeNav {
@@ -72,6 +72,9 @@ body {
     background-color: white;
     text-align: center;
     margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    border-bottom: 2px solid #fe7f2d;
 }
 
 #heading3 {
@@ -82,4 +85,19 @@ body {
 
 #footer {
     color: white;
+}
+
+#thanks {
+    border-bottom: 2px solid #fe7f2d;
+    padding-bottom: 2px;
+}
+
+#contactH1 {
+    border-bottom: 2px solid #fe7f2d;
+    padding-bottom: 2px;
+    margin-bottom: .8em;
+}
+
+#moveP {
+    margin-bottom: 0;
 }

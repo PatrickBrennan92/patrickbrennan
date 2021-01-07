@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top navHighlight">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Patrick Brennan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,17 +19,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a id="homeNav" class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a id="homeNav" class="nav-link active navHighlight" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a id="projectsNav" class="nav-link" href="#section3">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Me</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <button id="contactMeNav" class="btn btn-outline-warning" type="button">Contact Me</button>
+                    <a id="contactMeNav" class="btn btn-outline-warning" type="button" href="contact.html">Contact Me</a>
                 </form>
             </div>
         </div>
@@ -50,6 +50,7 @@
         </div>
     </section>
 
+    <!-- section 2 -->
     <section id="section2" class="container-fluid">
         <div id="heading2" class="container">
             <h2 class="display-4">Skills</h2>
@@ -60,7 +61,7 @@
                     <img id="cardIMG" src="Images/htmlcssjs.jpg" class="card-img-top" alt="HTML, CSS and JavaScript">
                     <div class="card-body">
                         <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">I enjoy creating beautiful, dynamic webpages that are simple to use and pleasing to look at.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cras justo odio</li>
@@ -78,7 +79,8 @@
                     <img id="cardIMG" src="Images/python-logo.png" class="card-img-top" alt="Python Logo">
                     <div class="card-body">
                         <h5 class="card-title">Python Development</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Python, being my first programming language, is the language I am most comfortable with. As you can see below, in the projects section, it is what i have written most of my applications in so far and (finish this section)
+                        </p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cras justo odio</li>
@@ -95,7 +97,7 @@
                 <div id="innerCard" class="card" style="width: 80%;">
                     <img id="cardIMG" src="Images/GitHub.png" class="card-img-top" alt="GitHub Logo">
                     <div class="card-body">
-                        <h5 class="card-title">Version Control</h5>
+                        <h5 class="card-title">I might change this to Node</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -112,6 +114,7 @@
         </div>
     </section>
 
+    <!-- section 3 -->
     <section id="section3" class="container-fluid">
         <div id="heading3" class="container">
             <h2 class="display-4">Projects</h2>
@@ -120,7 +123,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Python Aim Trainer
+                  <b>Python Aim Trainer</b>
                 </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -137,7 +140,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                  <b>Accordion Item #2</b>
                 </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -151,7 +154,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                        <b>Accordion Item #3</b>
                 </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -167,21 +170,14 @@
 
     <!-- Footer -->
     <footer id="footer" class="text-center text-lg-start">
-        <!-- Grid container -->
         <div class="container p-4">
-            <!--Grid row-->
             <div class="row">
-                <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase display-6">Thank you for your time.</h5>
-
+                    <h5 id="thanks" class="text-uppercase display-6">Thank you for your time.</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
                     </p>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Links</h5>
 
@@ -200,9 +196,6 @@
                         </li>
                     </ul>
                 </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase mb-0">Links</h5>
 
@@ -221,20 +214,13 @@
                         </li>
                     </ul>
                 </div>
-                <!--Grid column-->
             </div>
-            <!--Grid row-->
         </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             © 2020 Copyright:
             <a class="text-light" href="">Patrick Brennan</a>
         </div>
-        <!-- Copyright -->
     </footer>
-    <!-- Footer -->
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>

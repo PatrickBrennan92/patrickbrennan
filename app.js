@@ -1,3 +1,5 @@
+// Intro text
+
 const mainH1 = document.querySelector("#mainH1")
 const mainText = "Hello, I'm Patrick."
 const mainP = document.querySelector("#mainP")
