@@ -60,18 +60,19 @@
                 <div class="card" style="width: 80%;">
                     <img id="cardIMG" src="Images/htmlcssjs.jpg" class="card-img-top" alt="HTML, CSS and JavaScript">
                     <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
+                        <h5 class="card-title h5">Web Development</h5>
                         <p class="card-text">I enjoy creating beautiful, dynamic webpages that are simple to use and pleasing to look at.</p>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item h6">Dev Tools:</li>
+                        <li class="list-group-item lead">HTML/CSS/JS</li>
+                        <li class="list-group-item lead">Node</li>
+                        <li class="list-group-item lead">Bootstrap</li>
+                        <li class="list-group-item lead">Bulma</li>
+                        <li class="list-group-item lead">GitHub</li>
+                        <li class="list-group-item lead">Terminal</li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
+
                 </div>
             </div>
             <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
@@ -79,23 +80,22 @@
                     <img id="cardIMG" src="Images/python-logo.png" class="card-img-top" alt="Python Logo">
                     <div class="card-body">
                         <h5 class="card-title">Python Development</h5>
-                        <p class="card-text">Python, being my first programming language, is the language I am most comfortable with. As you can see below, in the projects section, it is what i have written most of my applications in so far and (finish this section)
+                        <p class="card-text">I enjoy coding applications from the ground up using Python. I love discovering new challenges and finding new and creative ways to overcome problems.
                         </p>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item h6">Projects:</li>
+                        <li class="list-group-item lead">Aim Training game using Pygame</li>
+                        <li class="list-group-item lead">Console based Hangman</li>
+                        <li class="list-group-item lead">Console based Tic Tac Toe</li>
+                        <li class="list-group-item lead">Snake using Pygame</li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
+
                 </div>
             </div>
             <div id="cards" class="col-lg-4 d-flex justify-content-center text-center">
                 <div class="card" style="width: 80%;">
-                    <img id="cardIMG" src="Images/GitHub.png" class="card-img-top" alt="GitHub Logo">
+                    <img id="cardIMG" src="..." class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">I might change this to Node</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -122,25 +122,23 @@
         <div class="container accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <b>Python Aim Trainer</b>
+                    <button id="accordianButton" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <span class="display-6">Python Aim Trainer</span>
                 </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This was my first major project while learning Python.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                        though the transition does limit overflow.
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex justify-content-start">
+                        <strong>This was my first major project while learning Python.</strong>
                     </div>
                     <div>
-                        <img src="Images/Projects/Aim_Trainer.png" alt="image of aim trainer game.">
+                        <img class="img-fluid" src="Images/Projects/Aim_Trainer.png" alt="image of aim trainer game.">
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <b>Accordion Item #2</b>
+                    <button id="accordianButton" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span class="display-6">Snake <span class="small">using Pygame</span></span>
                 </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -149,12 +147,16 @@
                         as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
                         the transition does limit overflow.
                     </div>
+                    <div>
+                        <img class="img-fluid" src="Images/Projects/Snake_project.png" alt="Example image of the snake game I created.">
+                    </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <b>Accordion Item #3</b>
+                    <button id="accordianButton" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="display-6">Hangman <span class="small">based in the console</span></span>
+                        
                 </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -162,6 +164,9 @@
                         <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well
                         as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
                         the transition does limit overflow.
+                    </div>
+                    <div>
+                        <img src="Images/Projects/Hangman_Project.png" alt="Example image of the hangman game I created.">
                     </div>
                 </div>
             </div>
@@ -174,46 +179,19 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 id="thanks" class="text-uppercase display-6">Thank you for your time.</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    <p class="lead">
+                        Thank you for taking the time to look over my website portfolio.
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-light">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-light">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-light">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-light">Link 4</a>
-                        </li>
-                    </ul>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <p>
+                        <a href="https://www.linkedin.com/in/patrick-brennan-04967a203/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#0e76a8" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>
+                        </a>
+                    </p>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-0">Links</h5>
 
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!" class="text-light">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-light">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-light">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-light">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
